@@ -1,4 +1,5 @@
 // example about export module
-let counter = require('./count');
-
-counter(['p1','p2','p3']);
+let calculator = require('./calculator');
+calculator.add(1,2);
+calculator.sub(1,2);
+calculator.pi;
