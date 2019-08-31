@@ -1,32 +1,11 @@
-// events module exist by default in node
-var events = require('events');
+// http core  module exist by default in node
+var http = require('http');
 
-var Eventemitter = new events.EventEmitter();
-
-Eventemitter.on('sayHello', function (name) {
-    console.log('Hello ' + name);
-})
-
-Eventemitter.emit('sayHello', 'Khalaf');
-
-var util = require('util');
-
-var Person = function (name) {
-    this.name = name;
-}
-
-util.inherits(Person, events.EventEmitter);
-
-var person1 = new Person('aya');
-var person2 = new Person('basma');
-var person3 = new Person('mama');
-
-var persons = [person1, person2, person3];
-
-persons.forEach(person => {
-    person.on('sayHello', function () {
-        console.log('Hello ' + this.name);
-    });
+var server = http.createServer(function(request,response){
+    console.log(request.url);
+    response.writeHead(200,{'Content-type':'text\plain'});
+    response.end("Welcome Man");
 });
-console.log(person1);
-person1.emit('sayHello');
+
+server.listen(3000,'127.0.0.1');
+console.log("server run");
