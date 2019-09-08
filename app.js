@@ -4,9 +4,11 @@
 
 var fs = require('fs');
 
-var readableStream = fs.createReadStream('text.txt', 'utf8');
+var readableStream = fs.createReadStream('readMe.txt', 'utf8');
+var writeableStream = fs.createWriteStream('writeMe.txt');
 
 readableStream.on('data', function (chunk) {
     console.log('New Chunk receievd');
     console.log(chunk);
+    writeableStream.write(chunk);
 });
