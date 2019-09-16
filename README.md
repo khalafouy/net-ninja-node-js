@@ -10,3 +10,7 @@ course url : https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw
 * npm install packageName 
 * npm uninstall packageName 
 * npm install packageName -save : -save means this package is required when you run app 
+* npm install packageName -g 
+* nodemon file.js
+
+

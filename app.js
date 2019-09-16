@@ -4,7 +4,7 @@ var http = require('http');
 var server = http.createServer(function(request,response){
     console.log(request.url);
     response.writeHead(200,{'Content-type':'application\json'});
-    var object = {name:"khalaf",job:"developer",age:12};
+    var object = {name:"khalaf",job:"developer",age:22};
     response.end(JSON.stringify(object));
 });
 
