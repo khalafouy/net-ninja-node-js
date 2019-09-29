@@ -1,12 +1,16 @@
 // return response as json
-var http = require('http');
+var express = require('express');
 
-var server = http.createServer(function(request,response){
-    console.log(request.url);
-    response.writeHead(200,{'Content-type':'application\json'});
-    var object = {name:"khalaf",job:"developer",age:22};
-    response.end(JSON.stringify(object));
+var app = express();
+
+
+app.get('/',function(req,res){
+    res.send('home screen');
 });
 
-server.listen(3000,'127.0.0.1');
+app.get('/contact',function(req,res){
+    res.send('contact screen');
+});
+
+app.listen(3000);
 console.log("server run");

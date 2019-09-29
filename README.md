@@ -14,3 +14,9 @@ course url : https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw
 * nodemon file.js
 
 
+#lesson-23
+
+* install express
+* use get method in express 
+
+
