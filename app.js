@@ -10,10 +10,10 @@ app.get('/',function(req,res){
 });
 
 app.get('/contact',function(req,res){
-    res.sendFile(__dirname+'/contact.html');
+    res.render('contact',{});
 });
 
-app.get('/profile/:name',function(req,res){
+app.get('/profile/:name?',function(req,res){
     var hobbies = ['eating','killing','hoping'];
     res.render('profile',{name:req.params.name,hobbies:hobbies}); 
 });
