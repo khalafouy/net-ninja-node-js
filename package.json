@@ -1,8 +1,8 @@
 {
-  "name": "net-ninja-node",
+  "name": "todo",
   "version": "1.0.0",
-  "description": "test",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,11 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/khalafouy/net-ninja-node-js.git"
   },
-  "keywords": [
-    "node.js",
-    "npm"
-  ],
-  "author": "khalafouy",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/khalafouy/net-ninja-node-js/issues"
